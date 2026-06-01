@@ -1,0 +1,33 @@
+<svg width="180" height="180" viewBox="0 0 180 180" fill="none" xmlns="http://www.w3.org/2000/svg">
+  <defs>
+    <linearGradient id="tr-gradient" x1="30" y1="40" x2="150" y2="140" gradientUnits="userSpaceOnUse">
+      <stop stop-color="#3b82f6"/>
+      <stop offset="1" stop-color="#06b6d4"/>
+    </linearGradient>
+    <filter id="glow" x="-25%" y="-25%" width="150%" height="150%">
+      <feGaussianBlur stdDeviation="3" result="blur"/>
+      <feMerge>
+        <feMergeNode in="blur"/>
+        <feMergeNode in="SourceGraphic"/>
+      </feMerge>
+    </filter>
+  </defs>
+
+  <rect width="180" height="180" rx="40" fill="#0a0d14"/>
+  <rect x="4" y="4" width="172" height="172" rx="38" fill="#111827"/>
+  <rect x="4" y="4" width="172" height="172" rx="38" fill="#3b82f6" fill-opacity="0.14"/>
+  <rect x="4" y="4" width="172" height="172" rx="38" stroke="#3b82f6" stroke-opacity="0.45" stroke-width="2.5"/>
+
+  <text
+    x="90"
+    y="92"
+    text-anchor="middle"
+    dominant-baseline="central"
+    font-family="ui-monospace, 'Cascadia Code', 'SF Mono', Consolas, monospace"
+    font-size="124"
+    font-weight="700"
+    letter-spacing="-4"
+    fill="url(#tr-gradient)"
+    filter="url(#glow)"
+  >TR</text>
+</svg>
