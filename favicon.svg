@@ -1,33 +1,23 @@
-<svg width="180" height="180" viewBox="0 0 180 180" fill="none" xmlns="http://www.w3.org/2000/svg">
-  <defs>
-    <linearGradient id="tr-gradient" x1="30" y1="40" x2="150" y2="140" gradientUnits="userSpaceOnUse">
-      <stop stop-color="#3b82f6"/>
-      <stop offset="1" stop-color="#06b6d4"/>
-    </linearGradient>
-    <filter id="glow" x="-25%" y="-25%" width="150%" height="150%">
-      <feGaussianBlur stdDeviation="3" result="blur"/>
-      <feMerge>
-        <feMergeNode in="blur"/>
-        <feMergeNode in="SourceGraphic"/>
-      </feMerge>
-    </filter>
-  </defs>
+<svg xmlns="http://www.w3.org/2000/svg" width="64" height="64" viewBox="0 0 64 64">
+  <!--
+    The mark: three isometric slabs, the AI Fabric stack from the hero.
+    Agents on top, the gateway (accent) in the middle, models and tools below.
+  -->
+  <rect width="64" height="64" rx="14" fill="#0f131c"/>
+  <rect x="0.75" y="0.75" width="62.5" height="62.5" rx="13.25" fill="none" stroke="#97a8c7" stroke-opacity="0.22" stroke-width="1.5"/>
 
-  <rect width="180" height="180" rx="40" fill="#0a0d14"/>
-  <rect x="4" y="4" width="172" height="172" rx="38" fill="#111827"/>
-  <rect x="4" y="4" width="172" height="172" rx="38" fill="#3b82f6" fill-opacity="0.14"/>
-  <rect x="4" y="4" width="172" height="172" rx="38" stroke="#3b82f6" stroke-opacity="0.45" stroke-width="2.5"/>
+  <!-- bottom slab: models and tools -->
+  <path d="M12 41 L32 51 L32 57 L12 47 Z" fill="#252d40"/>
+  <path d="M32 51 L52 41 L52 47 L32 57 Z" fill="#2c3548"/>
+  <path d="M32 31 L52 41 L32 51 L12 41 Z" fill="#3a4660"/>
 
-  <text
-    x="90"
-    y="92"
-    text-anchor="middle"
-    dominant-baseline="central"
-    font-family="ui-monospace, 'Cascadia Code', 'SF Mono', Consolas, monospace"
-    font-size="124"
-    font-weight="700"
-    letter-spacing="-4"
-    fill="url(#tr-gradient)"
-    filter="url(#glow)"
-  >TR</text>
+  <!-- middle slab: the gateway -->
+  <path d="M12 29 L32 39 L32 45 L12 35 Z" fill="#2b62c6"/>
+  <path d="M32 39 L52 29 L52 35 L32 45 Z" fill="#3573dc"/>
+  <path d="M32 19 L52 29 L32 39 L12 29 Z" fill="#5b9cf6"/>
+
+  <!-- top slab: agents -->
+  <path d="M12 17 L32 27 L32 33 L12 23 Z" fill="#b6c0d3"/>
+  <path d="M32 27 L52 17 L52 23 L32 33 Z" fill="#cad2e2"/>
+  <path d="M32 7 L52 17 L32 27 L12 17 Z" fill="#eef1f7"/>
 </svg>
